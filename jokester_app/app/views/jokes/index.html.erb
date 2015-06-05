@@ -1,1 +1,23 @@
-index.html.erb
+<h1>Jokester<h1>
+<h4>Randomly Punny<h4>
+
+<table>
+ <thead>
+   <tr>
+   	<th>Joke:</th>
+   </tr>
+ </thead>
+
+ <tbody>
+   <% @joke.each do |joke| %>
+     <tr>
+       <td><%= joke.content %></td>
+       <br><br><br>
+       <td><%= user.username %></td>
+     </tr>
+   <% end %>
+ </tbody>
+</table>
+<br><br><br><br><br><br><br>
+
+<footer>Punny People (c) 2015</footer>
